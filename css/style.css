@@ -1,0 +1,999 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500&family=Raleway:ital,wght@0,500;0,600;1,400&display=swap");
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* vawe line style */
+.vawe__line {
+    width: 46px;
+    height: 4px;
+    background-color: #000000;
+    border: 2px solid #4b54fa;
+}
+
+/* vawe line style */
+
+/* header style start */
+header {
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+.heared::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(58, 55, 71);
+    z-index: 2;
+}
+.header__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.header__logo {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.header__logo img {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+.heared__burger {
+    display: none;
+}
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header__list li {
+    list-style: none;
+    margin: 0px 0px 0px 48px;
+}
+.header__link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #303134;
+    font-family: "Raleway";
+    text-align: center;
+}
+
+/* header style end */
+
+/* api page style */
+.cardsFromApi{
+    width: 100%;
+    height: 100vh;
+}
+.OurServices__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100% ;
+}
+
+
+/* api page style end*/
+
+/* section carousel style start */
+.carousel__items {
+    width: 100%;
+    height: 569px;
+    position: relative;
+}
+.carousel__item {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/CarouselImg/slider_img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    transition: 1s;
+}
+.items2,
+.items3,
+.items4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.items2 {
+    background-image: url(../img/CarouselImg/slider_img2.png);
+    background-position: 100% 0;
+}
+.items3 {
+    background-image: url(../img/CarouselImg/slider_img3.png);
+    background-position: 100% 0;
+}
+.items4 {
+    background-image: url(../img/CarouselImg/slider_img4.png);
+    background-position: 50% 50%;
+}
+
+.carousel__item.active {
+    opacity: 1;
+    z-index: 1;
+    transition: 1s;
+}
+.carousel__content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    background-image: url(../img/CarouselImg/BackgroundBlue.png);
+}
+.carousel__content h6 {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 21px;
+    line-height: 37px;
+    color: #006cd1;
+    font-weight: 700;
+    font-family: "Raleway";
+    background-image: url(../img/CarouselImg/price_background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3%;
+}
+.carousel__content h1 {
+    font-size: 79px;
+    line-height: 53px;
+    color: #ffffff;
+    font-family: "Arial";
+    margin-bottom: 7%;
+}
+.carousel__content p {
+    font-size: 18px;
+    line-height: 37px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Raleway";
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    font-size: 20px;
+    opacity: 0.5;
+    background-color: white;
+    outline: 2px solid white;
+    outline-offset: 3px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.6s;
+    z-index: 3;
+}
+.arrow:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.6s;
+}
+.arrowLeft {
+    left: 9%;
+}
+.arrowRight {
+    right: 9%;
+}
+/* section carousel style end */
+
+/* services style start */
+
+.Services {
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+}
+.Services .container {
+    display: flex;
+}
+.Our__hot__services {
+    width: 30%;
+    height: 100vh;
+    font-family: "Raleway";
+}
+
+.Our__hot__services h5 {
+    font-size: 16px;
+    line-height: 37px;
+    color: #8d8d8d;
+    font-weight: 600;
+}
+.Our__hot__services h2 {
+    font-size: 26px;
+    line-height: 37px;
+    font-weight: 600;
+}
+.Our__hot__services p {
+    width: 241px;
+    height: 145px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8d8d8d;
+    font-weight: 500;
+}
+
+.Services__cards {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2px;
+    column-gap: 2px;
+    justify-content: space-between;
+}
+/* services style end */
+
+
+/* position fixed dtyle */
+
+.position-fixed {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1030;
+    background-color: red;
+    display: none;
+  }
+  
+  .open-zoom {
+    display: block !important;
+  }
+  
+  .zoom__box {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .zoom_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .close-zoom {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+/* position fixed dtyle end */
+
+/* VideoSection style start */
+.VideoSection {
+    width: 100%;
+    height: 70vh;
+}
+.VideoSection .VideoSection__content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/videoSection/Background.png);
+    background-color: #30313440;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 84%;
+}
+.VideoSection .VideoSection__content .VideoSection__title {
+    position: absolute;
+    top: 8%;
+    right: 42%;
+    text-align: center;
+    font-family: "Raleway";
+    line-height: 37px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.VideoSection .VideoSection__content .VideoSection__title h5 {
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+.VideoSection .VideoSection__content .VideoSection__title h3 {
+    font-size: 26px;
+}
+.VideoSection .VideoSection__content .VideoSection__video {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+/* VideoSection style end */
+
+/* Review section style start */
+
+.Review {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Review .Review__card {
+    text-align: center;
+    line-height: 22px;
+    color: #1a1a1b;
+}
+.Review .Review__card h3 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Lato";
+}
+.Review .Review__card h5 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Raleway";
+}
+
+/* Review section style end */
+
+/* PopularTours section style start */
+.PopularTours {
+    font-family: "Raleway";
+    margin-top: 70px;
+}
+.PopularTours .PopularTours__title {
+    text-align: center;
+    line-height: 37px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+.PopularTours .PopularTours__title h5 {
+    font-size: 16px;
+    color: #8d8d8d;
+    margin-bottom: 1%;
+}
+.PopularTours .PopularTours__title h3 {
+    font-size: 26px;
+    color: #1a1a1b;
+}
+.PopularTours .PopularTours__cardWrap {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.PopularTours .PopularTours__cardWrap .PopularTours__card {
+    width: 260px;
+    height: 358px;
+    position: relative;
+    text-align: center;
+}
+.PopularTours .PopularTours__cardWrap .PopularTours__card img {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.PopularTours .PopularTours__cardWrap .PopularTours__card .PopularTours__reasone {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 98px;
+    height: 25px;
+    background-color: #fed701;
+}
+.PopularTours .PopularTours__cardWrap .PopularTours__card .PopularTours__cardImgContent {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+}
+.PopularTours .PopularTours__cardWrap .PopularTours__card h6 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #1a1a1b;
+    font-weight: 500;
+}
+.PopularTours .PopularTours__cardWrap .PopularTours__card h4 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #4b54fa;
+    font-weight: 500;
+}
+/* PopularTours section style end */
+
+/* sale section style start */
+.sale {
+    width: 100%;
+    height: 350px;
+    margin-top: 70px;
+    font-family: "Raleway";
+    color: #ffffff;
+    background-image: url(../img/sale/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 42%;
+}
+.sale .sale__content {
+    opacity: 0.8;
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(-5deg, #08aeea 0%, #2af598 100%);
+    text-align: center;
+    line-height: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+.sale .sale__content h2 {
+    font-size: 34px;
+    font-weight: 600;
+}
+.sale .sale__content h6 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.sale .sale__content .EmailForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+}
+.sale .sale__content .EmailForm input {
+    width: 395px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff00;
+    border: none;
+}
+.sale .sale__content .EmailForm input::placeholder {
+    color: #ffffff;
+}
+.sale .sale__content .EmailForm button {
+    background-color: #ffffff;
+    color: #08aeea;
+    font-weight: 600;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 37px;
+}
+/* sale section style end */
+
+/* HeppyTravellers section style start*/
+
+.HeppyTravelers {
+    margin-top: 69px;
+}
+
+.HeppyTravelers .HeppyTravelers__title {
+    text-align: center;
+    line-height: 37px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+.HeppyTravelers .HeppyTravelers__title h5 {
+    font-size: 16px;
+    color: #8d8d8d;
+    margin-bottom: 1%;
+}
+.HeppyTravelers .HeppyTravelers__title h3 {
+    font-size: 26px;
+    color: #1a1a1b;
+}
+
+.HeppyTravelers .HeppyTravelers__cardWrap {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    font-family: "Raleway";
+}
+.HeppyTravelers .HeppyTravelers__cardWrap .HeppyTravelers__card {
+    width: 368px;
+    height: 409px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.HeppyTravelers .HeppyTravelers__cardWrap .HeppyTravelers__card .img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-size: cover;
+    background-position: 0% -1%;
+}
+.card1 {
+    background-image: url(../img/happyTravelers/1.png);
+}
+.card2 {
+    background-image: url(../img/happyTravelers/2.png);
+}
+.card3 {
+    background-image: url(../img/happyTravelers/3.png);
+}
+
+.HeppyTravelers .HeppyTravelers__cardWrap .HeppyTravelers__card h6 {
+    font-size: 18px;
+    line-height: 37px;
+    color: #4b54fa;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 38px;
+}
+.HeppyTravelers .HeppyTravelers__cardWrap .HeppyTravelers__card p {
+    width: 297px;
+    height: 130px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1a1a1b;
+    font-weight: 500;
+    font-family: "Raleway";
+    text-align: center;
+}
+.HeppyTravelers .HeppyTravelers__cardWrap .HeppyTravelers__card .cardImgContent__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HeppyTravellers section style end */
+
+/* book now section style */
+.BookNow {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/bookNowImg/Background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.BookNow .BookNow__content {
+    width: 100%;
+    height: 275px;
+    position: relative;
+    text-align: center;
+}
+.BookNow__content::before {
+    content: "";
+    background-image: url(../img/bookNowImg/BackgroundForContent.svg);
+    background-size: cover;
+    position: absolute;
+    top: -20%;
+    right: 0px;
+    bottom: 0;
+    left: 0px;
+    opacity: 0.3;
+}
+.BookNow .BookNow__content h3 {
+    font-size: 36px;
+    line-height: 37px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+}
+.BookNow .BookNow__content button {
+    margin-top: 50px;
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(-5deg, #08aeea 0%, #2af598 100%);
+    text-transform: uppercase;
+    cursor: pointer !important;
+}
+
+/* book now section style end */
+
+/* popular countries style */
+.PopularTouriscCountries {
+    margin-top: 80px;
+    background-color: #ffffff;
+}
+.PopularTouriscCountries__title {
+    text-align: center;
+    line-height: 37px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+.PopularTouriscCountries .PopularTouriscCountries__title h5 {
+    font-size: 16px;
+    color: #8d8d8d;
+    margin-bottom: 1%;
+}
+.PopularTouriscCountries .PopularTouriscCountries__title h3 {
+    font-size: 26px;
+    color: #1a1a1b;
+}
+.PopularTouriscCountries .PopularTouriscCountries__cardWrap {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.PopularTouriscCountries .PopularTouriscCountries__cardWrap .PopularTouriscCountries__card {
+    width: 271px;
+    height: 425px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardOne {
+    background-image: url(../img/PopularTouriscCountriesImg/1and4.png);
+    background-position: 50% 0%;
+}
+.cardTwo {
+    background-image: url(../img/PopularTouriscCountriesImg/2.png);
+    background-position: 70% 0%;
+}
+.cardThree {
+    background-image: url(../img/PopularTouriscCountriesImg/3.png);
+}
+.cardFour {
+    background-image: url(../img/PopularTouriscCountriesImg/1and4.png);
+    background-position: 50% 0%;
+}
+
+.PopularTouriscCountries
+    .PopularTouriscCountries__cardWrap
+    .PopularTouriscCountries__card
+    .PopularTouriscCountries__cardImgContent {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(0deg, #000000 0%, #303030 19%, rgba(255, 255, 255, 0.06) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.PopularTouriscCountries .PopularTouriscCountries__cardWrap .PopularTouriscCountries__card .botton {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    filter: drop-shadow(0 0 11.5px rgba(101, 101, 101, 0.2));
+    background-image: linear-gradient(-5deg, #08aeea 0%, #2af598 100%);
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.PopularTouriscCountries .PopularTouriscCountries__cardWrap .PopularTouriscCountries__card .botton .bi {
+    font-size: 30px;
+}
+.PopularTouriscCountries .PopularTouriscCountries__cardWrap .PopularTouriscCountries__card h6 {
+    font-size: 25px;
+    line-height: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Raleway";
+}
+.PopularTouriscCountries .PopularTouriscCountries__cardWrap .PopularTouriscCountries__card h4 {
+    font-size: 14px;
+    line-height: 37px;
+    color: #fefeff;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+/* popular countries style end */
+
+/* section map */
+.Map {
+    height: 45vh;
+    width: 100%;
+    margin-top: 80px;
+}
+.Map__map {
+    width: 100%;
+    height: 100%;
+}
+/* section map end */
+
+/*footer style start  */
+
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #141418;
+    font-family: "Raleway";
+}
+.footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
+.footer .col h5 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+.footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+}
+.social ul li {
+    display: inline-block;
+    padding-right: 10px !important;
+}
+.social ul .bi {
+    font-size: 30px;
+}
+.social ul .google {
+    color: orangered;
+}
+
+.footer .col ul li:hover {
+    color: #ffffff;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+}
+.clearfix {
+    clear: both;
+}
+footer .input {
+    width: 345px !important;
+}
+footer .input h5 {
+    margin-bottom: 4% !important;
+}
+footer .input .input-group span {
+    background-image: linear-gradient(-5deg, #08aeea 0%, #2af598 100%) !important;
+    cursor: pointer;
+}
+.secondSection {
+    height: 65px;
+    background-color: #141418;
+    border-top: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondSection h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #dcdbdb;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1280px) {
+    .contain {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 1139px) {
+    .contain .social {
+        width: 1000px;
+        display: block;
+    }
+    .social h1 {
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .footer .col {
+        width: 33%;
+    }
+    .footer .col h1 {
+        font-size: 14px;
+    }
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+        width: 50%;
+    }
+    .footer .col h1 {
+        font-size: 14px;
+    }
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .footer .col {
+        width: 100%;
+    }
+}
+
+/* responsibility start */
+@media (max-width: 1222px) {
+    .PopularTouriscCountries .PopularTouriscCountries__cardWrap {
+        column-gap: 10px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+    }
+    .PopularTouriscCountries .PopularTouriscCountries__cardWrap .PopularTouriscCountries__card {
+        width: 40%;
+        height: 600px;
+    }
+}
+@media (max-width: 992px) {
+    .header__list li {
+        margin: 0px 0px 0px 25px;
+    }
+    .Services {
+        margin-top: 20px;
+        height: 150vh;
+    }
+    .Services .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .Our__hot__services {
+        height: 10vh;
+    }
+    .Services__cards {
+        flex-direction: column;
+        margin-top: 30vh;
+        width: 100%;
+        height: 90vh;
+    }
+    .HeppyTravelers__cardWrap {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .heared__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 99;
+    }
+    .heared__burger span {
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: all 0.5s ease 0s;
+    }
+    .heared__burger::before,
+    .heared__burger::after {
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+    .heared__burger::before {
+        top: 0;
+    }
+    .heared__burger::after {
+        bottom: 0;
+    }
+    .heared__burger.active span {
+        transform: scale(0);
+    }
+    .heared__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .heared__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        padding: 70px 0px 0px 0px;
+        transition: all 0.5s ease 0s;
+        background-color: #303134d4;
+        z-index: 98;
+    }
+    .header__menu.active {
+        right: 0;
+    }
+    body.lock {
+        overflow: hidden;
+    }
+    .header__body {
+        height: 50px;
+    }
+
+    .header__list {
+        display: block;
+    }
+    .header__list li {
+        padding: 0px 0px 30px 0px;
+    }
+    .header__link {
+        font-size: 30px;
+        color: #ffffff;
+    }
+
+    .Services__cards {
+        flex-direction: column;
+        margin-top: 30vh;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .Our__hot__services {
+        width: 400px;
+    }
+    .Our__hot__services p {
+        margin: auto;
+    }
+}
+
+/* responsibility end */
